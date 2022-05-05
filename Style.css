@@ -39,6 +39,14 @@
   height: 800px;
   border-radius: 10px;
 }
+.faktabox {
+  background-color: rgba(145, 222, 245, 1);
+  color: black;
+  width: 150px;
+  margin-left:600px;
+  height: 150px;
+  border-radius: 5px;
+}
 
 .headline{
   margin-left: 20px;
@@ -46,4 +54,94 @@
 .maintext {
   margin-left: 20px;
   font-size: 17.5px;
+}
+.faktatext{
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+.slider {
+  width: 143px;
+  height: 272x;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 715px;
+  height: 272px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -143px;
+}
+#slide-3:target ~ .image-container {
+  left: -286px;
+}
+#slide-4:target ~ .image-container {
+  left: -429px;
+}
+#slide-5:target ~ .image-container {
+  left: -572px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    background-color: rgb(224, 150, 0);
+  }
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  color: rgb(253, 253, 253);
+    text-shadow:
+    -1px -1px 1px #000,
+    1px -1px 1px #000,
+    -1px 1px 1px #000,
+    1px 1px 1px #000;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  color: rgb(253, 253, 253);
+    text-shadow:
+    -1px -1px 1px #000,
+    1px -1px 1px #000,
+    -1px 1px 1px #000,
+    1px 1px 1px #000;
 }
